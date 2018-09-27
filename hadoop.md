@@ -37,10 +37,15 @@ export JAVA_HOME=/usr/local/java/jdk8/
 /etc/hadoop/core-site.xml,添加
 
 <configuration>
+    
 <property>
+    
     <name>fs.defaultFS</name>
+    
     <value>hdfs://master:9000</value>
+    
 </property>
+
 </configuration>
 
 slaves,添加主机名(master上面slave1，slave2，slave3，slave上面为各自名字)
