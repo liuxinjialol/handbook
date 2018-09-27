@@ -21,19 +21,31 @@ docker rmi <image id>
 docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 
 #要删除全部image的话
+
 docker rmi $(docker images -q)
+
 #查看容器日志
+
 docker logs -f <容器名orID>
+
 #当需要把一台机器上的镜像迁移到另一台机器的时候，需要保存镜像
+
 docker save <镜像名> > /home/save.tar
+
 #加载镜像
+
 docker load < /home/save.tar
+
 #构建自己的镜像
+
 docker build -t <镜像名> <Dockerfile路径>
+
 #如Dockerfile在当前路径
+
 docker build -t <镜像名> .
 
 重新查看container的stdout
+
 sudo docker attach <containerID>
 
 docker inspect
