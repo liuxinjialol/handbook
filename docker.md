@@ -30,7 +30,7 @@ docker logs -f <容器名orID>
 
 #当需要把一台机器上的镜像迁移到另一台机器的时候，需要保存镜像
 
-docker save <镜像名> > /home/save.tar
+docker save -o /usr/local/redis.tar redis:latest
 
 #加载镜像
 
