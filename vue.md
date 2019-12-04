@@ -1,3 +1,8 @@
+# 国内源安装
+
+$ npm install --registry https://registry.npm.taobao.org
+
+
 # 全局安装 vue-cli
 
 $ npm install --global vue-cli
