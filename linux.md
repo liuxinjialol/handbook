@@ -1,3 +1,7 @@
+chown -R root:root  nodejs
+
+
+
 #更改limits限制
 
 $vi /etc/security/limits.conf
