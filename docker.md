@@ -68,3 +68,10 @@ yum list installed |grep docker
 
 yum -y remove docker.x86_64
 
+
+
+
+
+docker cp testtomcat:/usr/local/tomcat/webapps/test/js/test.js /opt
+
+docker cp /opt/test.js testtomcat:/usr/local/tomcat/webapps/test/js
